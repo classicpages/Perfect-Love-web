@@ -98,3 +98,64 @@ footer {
 .events {
     font: 600;
 }
+
+
+.section-home {
+    background: url('images/home.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-about {
+    background: url('images/about.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-vision {
+    background: url('images/vision.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-leadership {
+    background: url('images/leadership.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-ministries {
+    background: url('images/ministries.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-events {
+    background: url('images/events1.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-creative {
+    background: url('images/events2.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-camp {
+    background: url('images/camp.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-love {
+    background: url('images/love.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-raised {
+    background: url('images/raised.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-gallery {
+    background: url('images/gallery.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.section-donation {
+    background: url('images/donation.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+}
