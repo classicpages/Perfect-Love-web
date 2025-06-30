@@ -50,6 +50,12 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.events {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
 h2 {
     color: #1e0e62;
     margin-bottom: 10px;
@@ -87,4 +93,8 @@ footer {
     padding: 20px;
     background: #1e0e62;
     color: white;
+}
+
+.events {
+    font: 600;
 }
