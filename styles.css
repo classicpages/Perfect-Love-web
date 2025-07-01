@@ -5,14 +5,17 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     background: #f4f4f4;
-    color: #222;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
+
 header {
-    background: #1e0e62;
+    background: rgb(214, 69, 69);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -21,7 +24,7 @@ header {
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     list-style: none;
     margin-top: 10px;
 }
@@ -41,14 +44,17 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 40px 20px;
-    max-width: 900px;
+    padding: 60px 40px;
+    width: 100%;
+    max-width: 1300px;
     margin: auto;
     background: white;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .events {
     font-weight: 900;
@@ -91,71 +97,262 @@ form button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: #1e0e62;
+    background: rgb(180, 50, 50);
     color: white;
 }
 
-.events {
-    font: 600;
+/* Section Backgrounds */
+.section-home,
+.section-about,
+.section-vision,
+.section-leadership,
+.section-ministries,
+.section-events,
+.section-creative,
+.section-camp,
+.section-love,
+.section-raised,
+.section-gallery,
+.section-donation {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px 20px;
+    transition: transform 0.5s ease, background-size 0.5s ease;
 }
 
+.section-home:hover,
+.section-about:hover,
+.section-vision:hover,
+.section-leadership:hover,
+.section-ministries:hover,
+.section-events:hover,
+.section-creative:hover,
+.section-camp:hover,
+.section-love:hover,
+.section-raised:hover,
+.section-gallery:hover,
+.section-donation:hover {
+    background-size: 110%;
+    transform: scale(1.01);
+}
 
+/* Specific Section Styles */
 .section-home {
-    background: url('images/home.jpg') center/cover no-repeat;
-    padding: 60px 20px;
+    background: url('images/Picture2.png') center/cover no-repeat;
+    color: black;
+    font: 1em sans-serif;
+    font-size: larger;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+}
+
+.home {
+
+    background-position: center;
+    background-position: 100px;
+}
+
+.btn {
+    background-color: rgb(69, 69, 196);
+    padding: 10px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    font-style: italic;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+}
+
+.spoken {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: rgb(219, 86, 108);
+}
+
+.word {
+ font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;   
+    font-style: italic;
+    color: purple;
+}
+
+.welcome {
+    color: black;
+}
+
+.perfect {
+    color: rgb(212, 12, 45);
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.int {
+     color: rgb(172, 47, 172);
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.lovee {
+    color: white;
 }
 
 .section-about {
-    background: url('images/about.jpg') center/cover no-repeat;
-    padding: 60px 20px;
+    background: url('images/Picture4.jpg') center/cover no-repeat;
+    font-weight: 600;
+    font-size: large;
+    font-style: italic;
+    color: white;
+}
+
+.about {
+    color: red;
+    font-style: italic;
+    font-weight: 800;
 }
 
 .section-vision {
-    background: url('images/vision.jpg') center/cover no-repeat;
-    padding: 60px 20px;
+    background: url('images/Picture13.jpg') center/cover no-repeat;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: large;
+    font-style: italic;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.vision {
+    background-color: violet;
 }
 
 .section-leadership {
     background: url('images/leadership.jpg') center/cover no-repeat;
-    padding: 60px 20px;
 }
 
 .section-ministries {
     background: url('images/ministries.jpg') center/cover no-repeat;
-    padding: 60px 20px;
 }
 
+.departments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.department-card {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.department-card:hover {
+    transform: translateY(-5px);
+}
+
+.department-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+
+/* Unique styles for image shapes */
+.style-one img {
+    border-radius: 25px 0 25px 0;
+}
+
+.style-two img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.style-three img {
+    border-radius: 0 25px 0 25px;
+}
+
+.style-four img {
+    border-radius: 15px;
+    border: 4px solid #1e0e62;
+}
+
+.style-five img {
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+
+@media (max-width: 768px) {
+    .departments-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .department-card {
+        width: 90%;
+    }
+
+    .style-two img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+/* More section backgrounds */
 .section-events {
     background: url('images/events1.jpg') center/cover no-repeat;
-    padding: 60px 20px;
 }
 
 .section-creative {
     background: url('images/events2.jpg') center/cover no-repeat;
-    padding: 60px 20px;
 }
 
 .section-camp {
-    background: url('images/camp.jpg') center/cover no-repeat;
-    padding: 60px 20px;
+    background: url('images/Picture6.jpg') center/cover no-repeat;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
 }
 
 .section-love {
-    background: url('images/love.jpg') center/cover no-repeat;
-    padding: 60px 20px;
+    background: url('images/Picture3\ -\ Copy.jpg') center/cover no-repeat;
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 
 .section-raised {
-    background: url('images/raised.jpg') center/cover no-repeat;
-    padding: 60px 20px;
+    background: url('images/Picture5.jpg') center/cover no-repeat;
+    color: white;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
 }
 
 .section-gallery {
     background: url('images/gallery.jpg') center/cover no-repeat;
-    padding: 60px 20px;
 }
 
 .section-donation {
     background: url('images/donation.jpg') center/cover no-repeat;
-    padding: 60px 20px;
 }
